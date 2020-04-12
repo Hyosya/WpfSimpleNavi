@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="SampleApp.SampleAView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:SampleApp"
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d">
+    <StackPanel Orientation="Vertical">
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Text="{Binding Path=Test}"
+                   FontSize="20" />
+        <Button Content="Nvigate To B"
+                Command="{Binding Path=NavigateToBCommand}" />
+    </StackPanel>
+</UserControl>
